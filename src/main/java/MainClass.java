@@ -1,4 +1,5 @@
 import java.util.*;
+import Model.*;
 
 public class MainClass {
     public static void main(String[] args){
@@ -11,12 +12,14 @@ public class MainClass {
         System.out.println(m.getExp() + " " + m.getNr());
          */
 
-        String s1 = "x^3 + 3x^2 - 4";
-        String s2 = "x^4 - x";
+        //String s1 = "-2x^3-x^23+46+6x^3-3+2+x+x^3";"-34x^2 + 3 + x^2-45x+7+x^2";
+        String s1 = "2x^3 - x^4";
+        String s2 = "x^2-45x+7";
 
         Polinom p1 = new Polinom();
-        Polinom p2 = new Polinom();
 
         p1.fString(s1);
+        p1.reorder();
+        p1.afisare();
     }
 }
